@@ -1,0 +1,6 @@
+*.sh
+*.txt
+checkpoints
+checkpoints2
+__pycache__
+networks/__pycache__
