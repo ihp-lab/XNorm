@@ -15,7 +15,7 @@ This repo contains the following methods for multimodal fusion:
  - Gradient-Blending [3]
  - X-Norm (our method)
 
-## Overivew
+## Overview
 We present **X-Norm**, a novel, simple and efficient method for bimodal fusion that generates and exchanges limited but meaningful normalization parameters between the modalities implicitly aligning the feature spaces.
 
 ### Overview for X-Norm
@@ -31,7 +31,7 @@ We present **X-Norm**, a novel, simple and efficient method for bimodal fusion t
  - CUDA 10.1
 
 ### Datasets and Pretrained Weights
-Step 1: Download the RGB and Optical flow frames of P01, P08, and P22 from [EPIC_KITCHENS-100](https://github.com/epic-kitchens/epic-kitchens-100-annotations) and put them into the ```data/epic_kitchens``` fold.
+Step 1: Download the RGB and Optical flow frames of kitchens P01, P08, and P22 from [EPIC_KITCHENS-100](https://github.com/epic-kitchens/epic-kitchens-100-annotations) and put them into the ```data/epic_kitchens``` fold.
 
 Step 2: Download the pretrained weights [rgb_imagenet.pt](https://github.com/piergiaj/pytorch-i3d/blob/master/models/rgb_imagenet.pt) and [flow_imagenet.pt](https://github.com/piergiaj/pytorch-i3d/blob/master/models/flow_imagenet.pt) and put them into the ```checkpoints``` fold.
 
