@@ -19,10 +19,10 @@ This repo contains the following methods for multimodal fusion:
 We present '''X-Norm''', a novel, simple and efficient method for bimodal fusion that generates and exchanges limited but meaningful normalization parameters between the modalities implicitly aligning the feature spaces.
 
 ### Overview for X-Norm
-<embed src="/figures/X-Norm.pdf" type="application/pdf">
+![Alt text](/figures/X-Norm.pdf?raw=true "X-Norm")
 
 ### Architecture for NormExchange layer
-<embed src="/figures/NormExchange.pdf" type="application/pdf">
+![Alt text](/figures/NormExchange.pdf?raw=true "NormExchange")
 
 ## Usage
 ### Prerequisites
