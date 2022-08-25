@@ -14,8 +14,8 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--seed', type=int, default=0)
 
 # data path
-parser.add_argument('--csv_root', type=str, default='../dataset/epic_kitchens')
-parser.add_argument('--data_root', type=str, default='../data/epic_kitchens')
+parser.add_argument('--csv_root', type=str, default='./dataset/epic_kitchens')
+parser.add_argument('--data_root', type=str, default='./data/epic_kitchens')
 parser.add_argument('--ckpt_path', type=str, default='./checkpoints')
 
 # data
