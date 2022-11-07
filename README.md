@@ -47,7 +47,13 @@ python main.py --fusion early/late/misa/mult/gb/xnorm
 ## Citation
 If you find this work or code is helpful in your research, please cite:
 ```
-Coming soon
+@inproceedings{yin2022x,
+  title={X-Norm: Exchanging Normalization Parameters for Bimodal Fusion},
+  author={Yin, Yufeng and Xu, Jiashu and Zu, Tianxin and Soleymani, Mohammad},
+  booktitle={INTERNATIONAL CONFERENCE ON MULTIMODAL INTERACTION},
+  pages={605--614},
+  year={2022}
+}
 ```
 
 ## Reference
