@@ -145,7 +145,7 @@ class XNorm(nn.Module):
 					else:
 						a2, b2 = torch.chunk(self.rgb2flow_l3(x2), 2, dim=1)
 
-					x1 = x1+((x1-a1)/b1)*b2+a2
+					final_x1 = x1+((x1-a1)/b1)*b2+a2
 
 					a2, b2 = torch.mean(x2, [1,2,3,4], True), torch.std(x2, [1,2,3,4], keepdim=True).add(1e-8)
 					a2 = a2.repeat(1, x2.size(1), x2.size(2), x2.size(3), x2.size(4))
@@ -157,7 +157,8 @@ class XNorm(nn.Module):
 					else:
 						a1, b1 = torch.chunk(self.flow2rgb_l3(x1), 2, dim=1)
 
-					x2 = x2+((x2-a2)/b2)*b1+a1
+					final_x2 = x2+((x2-a2)/b2)*b1+a1
+					x1, x2 = final_x1, final_x2
 
 		x1 = self.rgb_enc.logits(self.rgb_enc.dropout(self.rgb_enc.avg_pool(x1)))
 		if self.rgb_enc._spatial_squeeze:
